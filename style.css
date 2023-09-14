@@ -23,6 +23,7 @@ body {
     align-items: center;
     z-index: 100;
     margin-bottom: 300px;
+    background-color: #000;
 }
 
 .logo{
@@ -34,7 +35,7 @@ body {
 
 .navbar a{
     position: relative;
-    font-size: 12px;
+    font-size: 13px;
     color: white;
     font-weight: 500;
     text-decoration: none;
@@ -112,7 +113,8 @@ body {
 }
 
 .third-card {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid ;
+    border-color: rgb(10,181,35) rgb(10,181,8) rgb(66,94,70) rgb(16,97,25);
     padding: 20px;
     margin: 25px;
     text-align: center;
@@ -240,7 +242,7 @@ body {
   transform: translateX(-50%);
   z-index: 0;
 }
-
+    
 /* Styling the disc-shaped nodes */
 .checkpoint::before {
   content: '';
@@ -296,38 +298,45 @@ body {
 }
 
 
-.footer-container{
-  width: 100%;
-  justify-content: center;
-  
+
+.container {
+    text-align: center;
+    align-items: center;
 }
-.social-icons{
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-.social-icons a {
-  text-decoration: none;
-  padding: 15px;
-  background-color: white;
-  margin: 10px;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.social-icons a i{
-  font-size: 1.5em;
-  color: black;
-  opacity: 0.8;
-}
-.Footer-text ul{
+
+.social {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; 
+    width: 25%;
+    margin-left: 37%;
+    margin-top: 1%;
 }
-.Footer-text ul li a{
-  color: rgb(255, 255, 255);
-  margin: 15px;
-  text-decoration: none;
-  font-size: 12px;
-  margin-right: 25px;
+
+.social-item {
+    text-align: center;
+}
+
+.social-item a {
+    text-decoration: none;
+}
+
+.social-item i {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+.social-item p{
+  font-size: 10px;
+  color: white;
+}
+
+
+
+/* Style for the copyright notice */
+.copyright {
+    flex-basis: 100%; /* Make it span the full width */
+    text-align: center;
+    padding: 10px 0;
+    color: #999; /* You can adjust the color as needed */
 }
