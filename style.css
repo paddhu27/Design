@@ -171,12 +171,11 @@ body {
 
 .timeline{
   margin: 4em auto;
-  min-width: 30em;
+  max-width: 30em;
 }
 .checkpoint{
-  max-width: 20em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  max-width: 25em;
+  margin-top: 10px;
   position: relative;
 }
 .checkpoint{
@@ -187,17 +186,23 @@ body {
 .bullet-container1{
   border: none;
 }
+.checkpoint:nth-child(even){
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
 .checkpoint:nth-child(odd){
   border-left: 3px solid #888;
   padding-left: 3em;
+  transform: translateX(-17em);
 }
 
 .fifth-container {
   display: flex;
   align-items: center;
-  margin-left:200px ;
   margin-top: 180px;
   color: rgb(255, 255, 255);
+  background-image: linear-gradient(90deg, rgb(0, 75, 5), rgb(1, 11, 3), rgb(0, 0, 0));
 }
 
 .fifth-container img{
@@ -205,5 +210,5 @@ body {
   margin-left: 450px;
 }
 .fifth-text{
-  margin-left: 100px;
+  margin-left: 300px;
 }
