@@ -212,3 +212,38 @@ body {
 .fifth-text{
   margin-left: 300px;
 }
+.footer-container{
+  width: 100%;
+  justify-content: center;
+  
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.social-icons a {
+  text-decoration: none;
+  padding: 15px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.social-icons a i{
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.8;
+}
+.Footer-text ul{
+    display: flex;
+    justify-content: center;
+}
+.Footer-text ul li a{
+  color: rgb(255, 255, 255);
+  margin: 15px;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 25px;
+}
