@@ -178,6 +178,7 @@ body {
   margin-top: 10px;
   position: relative;
 }
+
 .checkpoint{
   border: 2px solid #888;
   border-radius: 1em;
@@ -212,6 +213,89 @@ body {
 .fifth-text{
   margin-left: 300px;
 }
+
+
+
+
+/*-----------------------------------*/
+
+
+/* Add this CSS code to your existing CSS */
+
+.timeline {
+  margin: 4em auto;
+  max-width: 30em;
+  position: relative;
+}
+
+/* Styling the timeline line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Styling the disc-shaped nodes */
+.checkpoint::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Positioning the nodes and horizontal lines for odd and even checkpoints */
+.checkpoint:nth-child(odd)::before {
+  left: 100%;
+}
+
+.checkpoint:nth-child(even)::before {
+  right: 97%;
+}
+
+.checkpoint:nth-child(odd)::after,
+.checkpoint:nth-child(even)::after {
+  content: '';
+  position: absolute;
+  width: 22%;
+  height: 2px;
+  background-color: #ccc;
+  top: 50%; transform: translate(-50%, -50%);
+
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.checkpoint:nth-child(odd)::after {
+  left: 400px;
+}
+
+.checkpoint:nth-child(even)::after {
+  width: 13%;
+  right: 400px;
+}
+
+/* Style the bullet points */
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title p {
+  font-size: 0.8em;
+}
+
+
 .footer-container{
   width: 100%;
   justify-content: center;
