@@ -133,14 +133,19 @@ body {
 .fourth-container{
   color: white;
 }
-  .bullet-container {
+.fourth-container ::before{
+  content: '';
+  position: absolute;
+}
+  .bullet-container1 {
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
+    font-size: 0.8em;
   }
 
   .left-column1 {
-    flex: 1; 
+    flex: 1;
     padding: 0 10px;
   }
 
@@ -152,10 +157,53 @@ body {
   /* Style the bullet points */
   .disc {
     list-style-type: disc; 
+    color: white;
   }
 
+.title{
+  text-align: center;
+  margin-top: 20px;
+}
 
+.title p {
+  font-size: 0.8em;
+}
 
+.timeline{
+  margin: 4em auto;
+  min-width: 30em;
+}
+.checkpoint{
+  max-width: 20em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  position: relative;
+}
+.checkpoint{
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+.bullet-container1{
+  border: none;
+}
+.checkpoint:nth-child(odd){
+  border-left: 3px solid #888;
+  padding-left: 3em;
+}
 
+.fifth-container {
+  display: flex;
+  align-items: center;
+  margin-left:200px ;
+  margin-top: 180px;
+  color: rgb(255, 255, 255);
+}
 
-
+.fifth-container img{
+  width: 400px;
+  margin-left: 450px;
+}
+.fifth-text{
+  margin-left: 100px;
+}
